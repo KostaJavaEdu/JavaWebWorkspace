@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;img&apos; to &apos;ex1115_solution&apos;&#x0D;&#x0A;- Original project: &apos;step03_JavaScript&apos;&#x0D;&#x0A;- Destination element: &apos;ex1115_solution&apos;&#x0D;&#x0A;- Original element: &apos;img&apos;" description="Copy folder" element1="WebContent/ex1115/img" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1574007915415" target="/step04_jQuery/WebContent/ex1115_solution" units="0" version="1.0"/>
+</session>

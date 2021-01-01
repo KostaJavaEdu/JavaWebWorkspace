@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+<fullyQualifiedTypeName name="ex1122_homework.BoardDTO"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="com.mysql.cj.util.Util"/>
+<fullyQualifiedTypeName name="kosta.util.DbUtil"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="kosta.dto.Member"/>
+<fullyQualifiedTypeName name="kosta.dao.MemberDAO"/>
+<fullyQualifiedTypeName name="kosta.dao.MemberDAOImpl"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="kosta.model.service.ElectronicsService"/>
+<fullyQualifiedTypeName name="kosta.controller.ModelAndView"/>
+<fullyQualifiedTypeName name="kosta.model.dto.Electronics"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="shop.shoes.model.dto.PurchasePageDTO"/>
+<fullyQualifiedTypeName name="shop.shoes.model.dto.GoodsDetailDTO"/>
+<fullyQualifiedTypeName name="shop.shoes.model.GoodsDTO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="shop.shoes.controller.ModelAndView"/>
+<fullyQualifiedTypeName name="shop.shoes.model.ReviewDTO"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+</qualifiedTypeNameHistroy>

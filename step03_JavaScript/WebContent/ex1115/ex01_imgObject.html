@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <script type="text/javascript">
+  
+  function imgCheck(index) {
+	var str="";
+	switch (index) {
+	//자바스크립트 영역에서 img객체 접근하는 방법
+	  //1) document.images[index].속성(메소드)
+	  //2) document.이미지이름.속성
+	  //3) id로 찾기 : document.getElementById();
+	
+	case 1:
+		str +=  "name : " + document.images[0].name+"<br>"
+		str +=  "src : " + document.images[0].src+"<br>"
+		str +=  "width : " + document.images[0].width+"<br>"
+		str +=  "height : " + document.images[0].height+"<br>"
+		str +=  "alt : " + document.images[0].alt+"<br>"
+		str +=  "border : " + document.images[0].border+"<br>"
+		break;
+
+	case 2:
+		str +=  "name : " + document.dog.name+"<br>"
+		str +=  "src : " + document.dog.src+"<br>"
+		str +=  "width : " + document.dog.width+"<br>"
+		str +=  "height : " + document.dog.height+"<br>"
+		str +=  "alt : " + document.dog.alt+"<br>"
+		str +=  "border : " + document.dog.border+"<br>"
+		break;
+	}
+	document.getElementById("result").innerHTML = str;
+  }
+  
+  function imgInfo(imgName) { //cat or dog or ,...여러가지 이미지 이름 들어옴
+	  var str="";
+  
+  		//alert("전 :" + imgName);
+  		//alert("전 :" + eval(imgName));
+  		//document. 안써도 됨 이미 그 객체를 찾은거니까 
+  		imgName = eval(imgName);
+	    str +=  "name : " + imgName.name+"<br>"
+		str +=  "src : " + imgName.src+"<br>"
+		str +=  "width : " + imgName.width+"<br>"
+		str +=  "height : " + imgName.height+"<br>"
+		str +=  "alt : " + imgName.alt+"<br>"
+		str +=  "border : " + imgName.border+"<br>"
+		document.getElementById("result").innerHTML = str;
+  }
+  
+  function imgInfo2(imgObj) {
+	  var str="";
+	  
+		//document. 안써도 됨 이미 그 객체를 찾은거니까 
+	    str +=  "name : " + imgObj.name+"<br>"
+		str +=  "src : " + imgObj.src+"<br>"
+		str +=  "width : " + imgObj.width+"<br>"
+		str +=  "height : " + imgObj.height+"<br>"
+		str +=  "alt : " + imgObj.alt+"<br>"
+		str +=  "border : " + imgObj.border+"<br>"
+		document.getElementById("result").innerHTML = str;
+		
+		//이미지 변경
+		imgObj.src = "img/monkey.gif";
+  }
+  
+  </script>
+ </head>
+
+ <body>
+ <h1> img 객체</h1>
+
+ <img src="img/cat.gif" name="cat" width="100" height="80" 
+   alt="고양이그림"/> 
+
+<img src="img/dog.gif" name="dog" width="70" height="60" 
+   alt="강아지그림" border="10"/>
+
+ <hr>
+ <span onclick="imgCheck(1)">[고양이 정보]</span>
+ <span onclick="imgCheck(2)">[강아지 정보]</span> 
+ <hr>
+
+  <span onclick="imgInfo('cat')">[고양이 정보]</span>
+  <span onclick="imgInfo('dog')">[강아지 정보]</span>
+
+ <hr>
+
+  <span onclick="imgInfo2(cat)">[고양이 정보]</span>
+  <span onclick="imgInfo2(dog)">[강아지 정보]</span>
+<hr>
+<div id="result"></div>
+  
+ </body>
+</html>

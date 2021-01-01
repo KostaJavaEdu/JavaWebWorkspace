@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	function dateSetting() {
+		var today = new Date();
+		
+		//시 분 초 구한다.
+		var hours = today.getHours();
+		var minutes = today.getMinutes();
+		var seconds = today.getSeconds();
+		
+		//시에 따라 AM, PM 나눈다.
+		var ampm="AM ";
+		if(hours>=12){
+			ampm = "PM ";
+			hours-=12;
+		}
+		
+		//시 분 초가 한자리라면 앞에 0을 붙힌다.
+		 //ex) 5초 --> 05
+
+		 if(hours < 10)	 hours = "0" + hours;
+	 
+		 if(minutes< 10) minutes = "0" + minutes;
+ 
+		 if(seconds< 10) seconds = "0" + seconds;
+
+		 	
+		 //time 박스에 ex) AM 10 : 23 : 40 이렇게 출력한다.
+		document.f.time.value = 
+			ampm +  hours +":" +  minutes + ":" +  seconds;
+	}
+	
+	var state;
+	function timeStart() {
+		state = setInterval("dateSetting()",1000) //1초마다 호출
+	}
+	
+	function timeStop() {
+		clearTimeout(state); // setInterval기능중지
+	}
+
+</script>
+</head>
+<body>
+<form name="f">
+  <input type = "text" name="time"/>
+  <input type = "button" value="시작" onclick="timeStart()"/>
+  <input type = "button" value="중지" onclick="timeStop()"/>
+</form>
+</body>
+</html>

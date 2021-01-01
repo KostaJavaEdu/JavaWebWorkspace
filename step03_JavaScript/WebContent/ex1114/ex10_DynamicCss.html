@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.a{border:inset 10px blue; font-size:20px; font-family:궁서체}
+	.b{background-color: red; color: white}
+</style>
+
+<script type="text/javascript">
+
+	function check(index) {
+		switch(index){
+			case 1 :
+				//div영역
+				var divEle = document.getElementById("div");
+				divEle.style.width="200px";
+				divEle.style.height="200px";
+				divEle.style.border="5px double red";
+				divEle.style.backgroundColor="pink";
+				break;
+			case 2 : 
+				var spanEle = document.getElementById("span");
+				//spanEle.className = "a";		
+				spanEle.className = "a b";	
+		}
+	}
+
+</script>
+
+
+</head>
+<body>
+<h1>동적으로 CSS 변경하기</h1>
+<form name="f">
+	<button type="button" onclick="check(1)">div영역</button>
+	<button type="button" onclick="check(2)">span영역</button>
+</form>
+
+<hr>
+<div id="div">div영역입니다.</div>
+<hr>
+<span id="span">span영역입니다.</span>
+</body>
+</html>

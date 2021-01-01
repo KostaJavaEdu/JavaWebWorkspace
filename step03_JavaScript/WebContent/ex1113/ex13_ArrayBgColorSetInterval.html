@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+	//색상 배열로 5개 준비
+	var color=["pink","yellow","orange","green","blue"];
+	/* var i=0;
+	function bgChange() {	
+	var j = i++ % 5;
+		console.log(color[j]);
+		document.bgColor = color[j];
+		//setTimeout("bgChange()", 1000);//1초
+	} */
+	
+	var i=0;
+	
+	function bgChange() {
+		console.log(color[i++]);
+		document.bgColor = color[i++];
+		if (i == color.length)
+			index = 0;
+		//setTimeout("bgChange()", 1000);//1초
+	}
+</script>
+</head>
+<body onload="setInterval('bgChange()', 1000)">
+
+</body>
+</html>

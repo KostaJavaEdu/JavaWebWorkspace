@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html  onmousemove="mousePosition()">
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style>
+    img{position:absolute;}
+  </style>
+	<script type="text/javascript">
+	
+	function mousePosition() {
+		//alert(1);
+		//마우스 좌표 구하기
+		var x = event.clientX;
+		var y = event.clientY;
+		
+		//console.log( x +" "+ y );
+		
+		//이미지를 x와 y의 위치로 이동시켜줘야해
+		document.getElementById("img").style.left=x+"px";
+		document.getElementById("img").style.top=y+"px";
+	}	
+	</script>
+  
+ </head>
+
+ <body>
+
+ <img src="img/cat.gif" id="img"/>
+  
+ </body>
+</html>

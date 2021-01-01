@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="common.js" >
+  //src속성이 추가된 script 안에 있는 문장은 실행안된다.
+</script> 
+<script type="text/javascript">
+	document.write("<hr>");
+	document.write("<h3>안녕</h3>");
+</script>
+</head>
+<body>
+<h1 onmouseover= "test1()"
+	onmouseout= "test2()">
+JavaScript 시작하기! - &lt;script> &lt;/script> 영역 안에서 작성
+</h1>
+
+<script type="text/javascript">
+  //변수선언
+  var name="최수녕";
+  
+  //document.write("이름은" + name);
+  document.write(`이름은 ${name}`); //그레이브악센트문법(es6V)
+</script>
+
+</body>
+</html>

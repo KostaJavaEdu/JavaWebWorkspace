@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ 
+ <script type="text/javascript">
+ 
+ function calCheck(fr){ //form객체
+	fr.result.value = eval(fr.cal.value);
+ }
+ 
+ function text_Eval(fr) { //form객체
+	//alert(fr.t1.value);
+ 	for(i=1;i<=5;i++){
+ 		var str = "fr.t"+i;
+ 		//alert("eval전 : " + str);
+ 		//alert("eval후 : " + eval(str)); //string을 Object로 변환
+ 		//alert(str.value);
+ 		str = eval(str);
+ 		alert(str.value);
+ 	}
+ }
+ 
+ </script>
+ 
+ 
+ </head>
+
+ <body>
+  <form>
+    식 :<input type="text" name="cal"/>
+	결과 : <input type="text" name="result" />
+	<input type="button" value="계산하기" onclick="calCheck(form)"/>
+
+	<hr>
+
+	<input type="text" name="t1" />
+	<input type="text" name="t2" />
+	<input type="text" name="t3" />
+	<input type="text" name="t4" />
+	<input type="text" name="t5" />
+
+	<input type="button" value="text입력값 가져오기" 
+	 onclick="text_Eval(form)" />
+
+
+  </form>
+
+ </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	document.write("<h1>함수를 만들어 보자!</h1>");
+	
+	function test1() {
+		alert("test1에서 호출됨!!")//메시지 창
+	}
+	
+	function test2(a,b) { //똑같이 test1으로 메소드 이름 써도 실행됨 -> 호이스팅개념
+		alert("test2(a,b)에서 호출됨...")
+		alert(`a=${a} , b=${b}`);
+	}
+	
+	function test3(name,age) {
+		console.log("test3() 호출됨...")
+		return name+"님의 나이는 " + age + "살입니다.";
+	}
+	
+	//test2(4,3);
+	//alert(`a=${a} , b=${b}`);
+	
+	//함수 호출
+	//test1();
+	//test2();
+	//test2(5,4,3,2);
+	//test1();
+	
+	var result = test3("최수녕",24);
+	document.write("result = " + result);
+</script>
+</head>
+<body>
+
+</body>
+</html>

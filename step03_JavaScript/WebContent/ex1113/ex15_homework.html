@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#text{width: 600px; height: 50px; border: 3px red double;}
+</style>
+<script type="text/javascript">
+var arr = ["오","늘","은","즐","거","운","!","!","집","에","가","고","싶","다","!"];
+var j=0;
+
+	function happy() {	
+		document.f.text.value += arr[j++];
+		
+		if(j==arr.length){
+			j=0;
+			return;
+		}			
+		setTimeout("happy()", 200);//1초
+	}
+
+</script>
+</head>
+
+<body>
+<h3>Text Element</h3>
+
+<form name="f" action="" method="get" >
+	<input type ="text" name="text" id="text">
+	<input type="button" name="button" value="클릭" id="button"  onclick="document.f.text.value='';happy()">
+</form>
+
+</body>
+</html>

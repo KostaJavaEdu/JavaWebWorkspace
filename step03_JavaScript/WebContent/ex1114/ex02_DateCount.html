@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function calculator() {
+		var fr = document.f;//form객체
+		//각 텍스트 박스에 데이터를 가져와서 Date()를 생성한다.(2개)
+		var endDate = new Date(fr.ey.value,(fr.em.value-1),fr.ed.value);
+		var startDate = new Date(fr.sy.value,(fr.sm.value-1),fr.sd.value);
+		
+		//두 Date를 뺀다. 
+		//ex) (endDate - startDate) / 1000
+		// 분 알고싶어 (endDate - startDate) / 1000 / 60
+		// 시 알고싶어 (endDate - startDate) / 1000 / 60 / 60
+		// 일수 알고싶어 (endDate - startDate) / 1000 / 60 / 60 / 24
+		alert(((endDate - startDate) / 1000 / 60 / 60 / 24) + "일 지났습니다.");
+	}
+	
+	//현재날짜 세팅하기
+	function todaySet() {
+		var date2 = new Date();
+		var fr = document.f;//form객체
+		fr.ey.value = date2.getFullYear();
+		fr.em.value = date2.getMonth();
+		fr.ed.value = date2.getDate();
+	}
+
+</script>
+</head>
+<body onload="todaySet()">
+<h1>날자 계산하기</h1>
+<form name="f">
+시작일
+<input type = "text" name="sy" size = "4">년
+<input type = "text" name="sm" size = "2">월
+<input type = "text" name="sd" size = "2">일
+
+<input type = "text" name="ey" size = "4">년
+<input type = "text" name="em" size = "2">월
+<input type = "text" name="ed" size = "2">일
+
+<button type="button" onclick="calculator()">계산하기</button>
+
+</form>
+</body>
+</html>

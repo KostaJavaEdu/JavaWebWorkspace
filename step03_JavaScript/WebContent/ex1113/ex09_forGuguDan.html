@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+table {width: 500px; border: 5px pink solid;}
+th, td{border: 1px gray solid; padding: 3px;}
+</style>
+<script type="text/javascript">
+	//구구단 출력
+	function guguDan() {
+		//alert(11);
+		//document.getElementById("div").innerHTML="<h1>안녕</h1>"
+		
+		//구구단 출력
+		document.write("<table style='border:double red 5px; width:400px'>")
+		for(var i=1; i<=9; i++){
+			document.write("<tr>")
+			for(var j=2; j<=9; j++){
+				document.write(`<td> ${j}*${i}=${i*j}</td> `);
+			}
+			document.write("</tr>")
+		}
+		document.write("</table>")
+	}
+	
+	//guguDan();
+</script>
+</head>
+
+<body onload="guguDan()"> <!--onload는 로딩이 완료된 후에(body다 스캔한 후) 호출해줘 -->
+	<div id = "div"></div>
+</body>
+</html>

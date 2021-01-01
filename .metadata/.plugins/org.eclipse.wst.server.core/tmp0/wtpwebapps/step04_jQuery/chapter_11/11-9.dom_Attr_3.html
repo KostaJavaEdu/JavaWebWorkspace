@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style>
+	div#bigImage{border:1px solid red;width:200px;height:200px;}
+</style>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+    	$("img").attr({width:80 , hegith:80});
+    	
+    	$("div>img").mouseover(function(){
+    		//console.log(1)
+            //console.log( $(this).attr("src")); 
+    		
+    		///console.log($("#bigImage").css("width"));
+    		//console.log($("#bigImage").attr("width"));
+    		
+    		var w =$("#bigImage").css("width");
+    	    var h = $("#bigImage").css("height");
+    		
+    		var str = `<img src='${$(this).attr("src")}'
+    	               width='${w}' height='${h}'>`;
+    	               
+    		 //console.log(str);
+    		//$("#bigImage").html(str);
+    		
+    		$("#bigImage").empty();
+    		$("#bigImage").append(str);
+    		
+    	});
+    	
+    });
+  </script>
+</head>
+<body>
+	
+<div id="product">
+    <img src="img/android.jpg" />
+    <img src="img/spring.jpg" />
+    <img src="img/unity.jpg" />  
+	  
+    <div id="bigImage" > </div>
+</div>
+</body>
+</html>

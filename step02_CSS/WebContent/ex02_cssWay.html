@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+	<style type="text/css">
+	/* css 영역이므로 css 문법 적용한다. */
+	/*
+		selector {property:value; .....}
+	*/
+	/* 1. 태그로 찾기 */
+	h1{color:red; font-family:궁서체}
+	h1, h3{border:dashed orange 5px}
+	
+	/* 2. id로 찾기 - # */
+	#a{background-color:pink;width:400px}
+	#b{text-decoration: line-through;}
+
+	/* 3. class로 찾기 */
+	.a{text-align: center;}
+	.b{border-radius: 30px}/* css3 추가 속성 */
+	
+	/* 4. 하위(자식) element 찾기 */
+	/* div>p{color:blue} */ /* div태그의 바로 하위 자식 p만 */
+	
+	/* div p{color:blue} */ /* div태그의 모든 하위 자식 p */
+	
+	/* div.a{} */ /* <div class="a"></div> */
+	/* div .a{} */ /* <div> <h3 class="a"></h3> </div> */
+	/* div#a{} */ /* <div id="a"></div> */
+	/* div > h3.b{} */ 
+	
+	/* 5. 속성으로 찾기 - [속성=값] */
+	input{border:red solid 1px} 
+	input[type=text]{background-color: yellow;}
+	input[name$=d]{color: red;} /* $는 단어로 끝나는 것 찾기 */
+	input[name^=na]{font-size: 20px} /* ^는 단어로 시작하는 것 찾기 */
+	
+	/* 6. */
+	table{width:400px; height:300px; border: double 3px red;
+		  border-collapse: collapse;}
+	table tr td{text-align: center;}
+	
+	td, th{border: 1px solid gray}
+	
+	table tr td:first-child{width:200px}
+	table tr td:last-child{width:30px}
+	
+	table tr:nth-child(2n) {background-color: orange;}
+
+</style>
+
+</head>
+<body>
+<!-- 
+	class는 하나의 태그 안에 여러개의 class를 적용할 수 있지만
+	id는 단 한개만 적용가능하다. 
+ -->
+<h1 id="a" class="a"> css 적용방법 2 - &lt;style> &lt;/style> 적용하기 </h1>
+<h1 class="a b"> 오늘은 화요일! </h1>
+<h3> 오늘 점심은 뭐 먹지?? </h3>
+
+<div>
+  <h2>My name is Donald</h2>
+  <p>I live in Duckburg.</p>
+</div>
+
+<div>
+  <span><p>I will not be styled.</p></span>
+</div>
+
+<p>My best friend is Mickey.</p>
+
+<hr>
+
+<form>
+	<input type="text" name="id"><br>
+	<input type="text" name="name"><br>
+	<input type="password" name="pwd"><br>
+</form>
+
+<hr>
+
+<table>
+  <tr>
+    <th>이름</th>
+    <th>나이</th>
+    <th>주소</th>
+  </tr>
+  
+  <tr>
+    <td>이름</td>
+    <td>나이</td>
+    <td>주소</td>
+  </tr>
+  
+  <tr>
+    <td>이름</td>
+    <td>나이</td>
+    <td>주소</td>
+  </tr>
+  
+  <tr>
+    <td>이름</td>
+    <td>나이</td>
+    <td>주소</td>
+  </tr>
+  
+  <tr>
+    <td>이름</td>
+    <td>나이</td>
+    <td>주소</td>
+  </tr>
+</table>
+
+
+
+
+
+</body>
+</html>

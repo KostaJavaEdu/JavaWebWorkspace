@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/* inline 요소에는 width, height 적용안됨
+	   inlune 요소에는 margin-left, margin-right는 적용되지만 
+	    margin-top, margin-bottom은 안된다.
+	 */
+	#a{background-color: red; width: 200px; height: 100px;
+	   display: inline-block;}
+	#b{background-color: green; margin: 20px; display: inline-block;}
+	#c{background-color: blue;}
+	
+	.a{background-color: red; width: 200px; height: 100px;}
+	.b{background-color: green; margin: 20px;}
+	.c{background-color: blue;}
+</style>
+</head>
+<body>
+<span id="a">span요소1</span><span id="b">span요소2</span><span id="c">span요소3</span>
+
+<hr>
+
+<div class="a">div요소1</div>
+<div class="b">div요소2</div>
+<div class="c">div요소3</div>
+
+</body>
+</html>

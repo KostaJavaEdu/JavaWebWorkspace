@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="../js/jquery-3.4.1.min.js"></script>
+
+<script>
+	$(function(){
+		$("table.tb").css("border","1px red solid");
+		$("td").css("border","1px black solid");
+		
+		
+		$("#add").click(function() {
+			var rowItem = "<tr>"
+				rowItem += `<td><input type="text" name="text" value="최수녕"></td>
+							<td><input type="text" name="number" value="0"></td>
+							<td><input type="button" name = "button" value="삭제"></td>`
+				rowItem += "</tr>"
+				
+				$('table.tb').append(rowItem);
+				
+			$('[type=button]').click( function() {
+			    $(this).closest("tr").remove()
+			});
+		});
+		
+		
+	
+	}) 
+</script>
+</head>
+<body>
+<h1>테이블 동적으로 생성하기</h1>
+<span id=add>추가하기</span><br>
+<table class="tb">
+<tr>
+<td>이름</td>
+<td>나이</td>
+<td>삭제하기</td>
+</tr>
+</table>
+</body>
+</html>

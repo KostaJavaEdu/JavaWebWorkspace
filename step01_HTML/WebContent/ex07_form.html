@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1> form 요소 </h1>
+<form action="http://www.naver.com" method="get" novalidate="novalidate">
+<!-- 
+	readonly = "readonly" : 읽기전용이지만 submit할때 데이터 전송된다.
+	disabled = "disabled" : submit할때 데이터가 전송안된다.
+ -->
+이름 : <input type ="text" name="name" size="25" maxlength="5"
+			  value="최수녕" readonly = "readonly"/> <br>
+
+비번 : <input type="password" name="pwd" size="10"/> <br>
+
+<!-- 
+	checkbox는 name이 같아도 달라도 상관없다.
+	하지만, javascript네 사용할때는 name이 같아야 사용하기 좋다.
+ -->
+<fieldset>
+	<legend>취미선택</legend> 
+		<input type="checkbox" name="hobby1" value="A">등산
+		<input type="checkbox" name="hobby2" value="B" checked="checked">수영
+		<input type="checkbox" name="hobby3" value="C">낙시
+		<input type="checkbox" name="hobby4" value="D" checked>골프
+</fieldset>
+
+<p>
+
+<!-- 
+	radio는 반드시 name이 같아야 단일선택이 된다.
+ -->
+<fieldset>
+	<legend>성별</legend>
+	<input type = "radio" name="gender" value="woman" checked="checked">여자
+	<input type = "radio" name="gender" value="man">남자
+</fieldset>
+
+<textarea row="5" cols="30" name="content" value="dddd">안녕하세요. 입력해주세요.
+</textarea> <p>
+
+<select name="job" size="3" multiple="multiple">
+<option value="0">--선택--</option>
+<option value="학생">학생</option>
+<option value="백수">백수</option>
+<option value="공주" selected="selected">공주</option>
+<option value="왕자">왕자</option>
+<option value="개발자">개발자</option>
+<option value="승무원">승무원</option>
+</select>
+
+<p>
+
+<input type = "button" value="눌러봐">
+
+<!-- type="file"을 사용할 때는 반드시 method="post"방식이어야하고
+		enctype="multipart/form-data"이런게 설정이 돼있어야함 -->
+		
+<input type = "file" name="file">
+<input type = "hidden" name="addr" value="seoul">
+<input type = "hidden" name="message" value="OK">
+
+<p>
+<button type="button">넌 뭐니?</button>
+<!-- button의 기본타입은 submit이기 때문에 ajax에서 비동기화가 안될 수 있음
+그렇기 때문에 type을 따로 지정해줘야함(?) -->
+
+<hr>
+<!-- HTML5 추가된 form type 속성들 -->
+<input type="date" min="2019-11-10" max="2019-12-10"/><p/>
+<input type="number" placeholder="숫자 입력해"/><p/>
+<input type="color" /><p/>
+<input type="email" /><p/>
+<input type="range" /><p/>
+<input type="text" placeholder="아이디 입력해" required="required"/>
+<hr>
+<input type = "submit" value = "가입">
+<input type = "image" src = "IU.jpg" width="50" height="50">
+<input type = "reset" value = "취소">
+
+</form>
+https://www.naver.com/?pwd=4545&hobby2=B&hobby4=D&gender=woman
+
+https://www.naver.com/?name=%C3%D6%BC%F6%B3%E7&pwd=4545&hobby2=B&hobby4=D&gender=woman
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

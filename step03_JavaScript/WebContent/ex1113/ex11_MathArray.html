@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+//"use strict"
+document.write("<h3>");
+document.write("Math Object 사용하기 <p>");
+
+document.write("난수 : " + (Math.floor(Math.random()*5 + 1)) + "<hr>");
+
+document.write("Array Object 사용하기<p>")
+
+var arr1 = [10,20,30,40,78];
+var arr2 = new Array("수녕","집","지친다.");
+var arr3 = [10,"서울",30,"부산",true,3,14];
+var arr4 = new Array(5);//5개의 공간이 생성
+
+//출력호출
+printArray(arr1);
+printArray(arr2);
+printArray(arr3);
+printArray(arr4); //호이스팅개념 때문에 결과 값 나올 수 있음(함수가 뒤에 있음에도 호출됨)
+
+//값 변경
+arr1[2]="안녕";
+arr2.push("얼짱");
+arr3[8]=100;
+arr4[1]=10;
+
+document.write("변경 후 호출 <br>");
+printArray(arr1);
+printArray(arr2);
+printArray(arr3);
+printArray(arr4);
+
+
+document.write("</h3>");
+
+function printArray(obj) {
+	document.write("obj의 typeof :" + typeof obj + "<br>");
+	document.write("obj.length :" + obj.length + "<br>");
+	
+	for(var i=0; i< obj.length; i++){
+		document.write("obj["+i+"]="+obj[i]+"<br>")
+	}
+	document.write("<hr>")
+}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

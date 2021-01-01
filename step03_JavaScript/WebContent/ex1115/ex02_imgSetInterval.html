@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <script type="text/javascript">
+  
+  var arr=["dog","monkey","tiger","cat"];
+  var index=0;
+  function move() {	
+	document.img.src = "img/"+arr[index % arr.length] + ".gif";
+	index++;
+	stop = setTimeout("move()",100);
+  }
+  
+ 
+  </script>
+  
+ </head>
+ <body onload="move()">
+  <img src="img/cat.gif" name="img" onmouseover="clearTimeout(stop)" onmouseout="move()"/>
+ </body>
+</html>
+
+
+
+
+

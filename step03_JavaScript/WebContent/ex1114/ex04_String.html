@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+  var str = "abcd abcd abcd"; //권장(성능면에서)
+  var str2 = new String("abcd abcd abcd");
+  
+  document.write(`typeof : ${typeof str}<br> `);
+  document.write(`typeof : ${typeof str2}<br> `);
+  
+  document.write(`== : ${str==str2}<br> `);
+  document.write(`=== : ${str===str2}<br> `);
+
+  //메소드를 사용해보자
+  document.write(`str : ${str} <br>`);
+  document.write(`str.length : ${str.length} <br>`);
+  
+  //charAt(index) : index에 해당하는 문자 리턴
+  //index는 0부터 시작
+  document.write(`str.charAt(0) : ${str.charAt(0)} <br>`);
+  document.write(`str.charAt(6) : ${str.charAt(6)} <br>`);
+  document.write(`str.charAt(20) : ${str.charAt(20)} <br>`);
+  
+  //indexOf(문자) : 왼쪽에서 찾기 or lastIndexOf(문자) : 오른쪽에서 부터 찾기
+  //문자가 있는 위치의 index를 리턴
+  document.write(`str.indexOf('b') ; ${str.indexOf('b')} <br>`);
+  document.write(`str.lastIndexOf('b') ; ${str.lastIndexOf('b')} <br>`);
+  
+  //없으면 -1을 리턴
+  document.write(`str.lastIndexOf('f') ; ${str.lastIndexOf('f')} <br>`);
+  
+  //여러 글자
+  document.write(`str.indexOf('bc') ; ${str.indexOf('bc')} <br>`);
+  document.write(`str.indexOf('bc',3) ; ${str.indexOf('bc',3)} <br>`);
+  
+  //문자열 일부분 추출
+  /*
+  	substring(index1, index2) : index1이 index2보다 작아야 한다.
+  	slice(index, index2)
+  	(substring,slice 원리 같음)
+  	
+  	substr(index1, len)
+  	
+  */
+  
+  document.write(`str.substring(0) : ${str.substring(0)} <br>`);
+  document.write(`str.substring(5) : ${str.substring(5)} <br>`);
+  document.write(`str.substring(3,5) : ${str.substring(3,5)} <br>`);
+  document.write(`str.substring(3,3) : ${str.substring(3,3)} <br>`);
+  
+  document.write(`str.substr(0) : ${str.substr(0)} <br>`);
+  document.write(`str.substr(3) : ${str.substr(3)} <br>`);
+  document.write(`str.substr(3,5) : ${str.substr(3,5)} <br>`);
+  
+  document.write(`str.slice(0) : ${str.slice(0)} <br>`);
+  document.write(`str.slice(3) : ${str.slice(3)} <br>`);
+  document.write(`str.slice(3,5) : ${str.slice(3,5)} <br>`);
+  
+  //split(문자) : 문자를 기준으로 분리하기(결과 배열형태)
+  var arr = str.split("b");
+  document.write(`arr : ${arr}<br>`);
+  document.write(`arr[0] : ${arr[0]} <br>`);
+  
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Insert title here</title>
+		<style>
+            button { margin: 10px;}
+            div {color: blue;font-weight: bold;}
+            span {color: red;}
+        </style>
+        <script src="../js/jquery-3.4.1.min.js"></script>
+		 <script>
+			$(function() {
+				$("button:first").click(function() {
+					//alert(1);
+					//span의 값을 읽어와서 1 증가하고 저장
+					increment($("span:first"));
+				});
+				
+				$("button:last").click(function() {
+					//alert(2);
+					//span의 값을 읽어와서 1 증가하고 저장
+					increment($("span:last"));
+					
+					//button:first하는 일을 호출 -> 다른 이벤트 발생 시키는 것 - trigger()
+					$("button:first").trigger("click");
+				});
+				function increment(obj) {
+					//alert(obj);
+					var no = parseInt($(obj).text()) + 1;
+					obj.text(no);
+					//val()은 form양식이 있을 때만 사용할 수 있다!!!
+				}
+			})//ready끝
+        </script>
+    </head>
+    <body>
+    	<h1>trigger 함수 </h1>
+    	<!-- form 태그가 없으면 button이 자동으로 submit안되므로 type = button으로 안바꿔도 됨 -->
+        <button>Button #1</button> 
+        <button>Button #2</button>
+        <div>
+            <span>0</span>
+            Button #1 clicks.
+        </div>
+        <div>
+            <span>0</span>
+            Button #2 clicks.
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script>
+  $(document).ready(function(){
+	  //이벤트 등록 ->  $(selector).이벤트종류();
+	  $("input[type=text]")
+	  .focus(function(){
+		  $(this).css({border:"double 3px red", color:"blue"});
+	  })
+	  .blur(function(){
+		  $(this).css("border","1px gray solid");
+		  
+		  //text박스의 값을 읽어서 div영역 넣기
+		  /*
+		    - $(this)  : jQuery문법
+		    - this : 자바스크립트 문법
+		    
+		    -form의 field의 값 가져오기
+		     jquery : val() 함수 
+		     javaScript : value 속성 
+		     
+		    javaScript의 innerHTML -> jquery에서 html()
+		    JavaScript의 innerText -> jQuery에서 text()
+		    
+		  */
+		  //alert( $(this).val() );
+		   $("#result").html("이름 : " + $(this).val() ) ;
+		   $(this).val("");
+		   //alert(this.value ) 
+		  
+	  });
+	  
+  });
+	
+</script>
+</head>
+<body>
+<h1>focus 와 blur 이벤트</h1>
+
+<form>
+   이름 : <input type="text" name="name" >	
+ </form>	
+<div id="result"></div>
+</body>
+</html>
+
+
+
+
+
+

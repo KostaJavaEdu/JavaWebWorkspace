@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+   <script>
+      function check(fr) {
+		//alert(11);
+		//유효성체크
+		if(fr.name.value==""){
+			alert("이름을 입력해주세요");
+			fr.name.focus();
+			return false; //함수 빠져나가라
+		}
+	  }
+      
+      function btnCheck(fr) { //form객체 전달
+		if(fr.name.value==""){
+			alert("이름을 입력해.");
+			fr.name.focus();
+			return;
+		}
+      	//폼전송해라
+      	fr.action="http://www.naver.com";
+      	fr.submit();//
+	  }
+   </script>
+ </head>
+
+ <body>
+ <h2> onsubmit 이벤트 </h2>
+ <form name="f" action="http://www.daum.net" onsubmit="return check(this)">
+    이름 : <input type="text" name="name"/> <br>
+	아이디 : <input type="text" name="id"/> <br>
+	비번 : <input type="text" name="pwd"/> <br>
+
+	<input type="submit" value="전송" />
+	<input type="reset" value="취소" />
+	<input type="button" value="전송하기" onclick="btnCheck(form)"/>
+ </form>
+  
+ </body>
+</html>

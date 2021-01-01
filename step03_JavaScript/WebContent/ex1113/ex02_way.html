@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+   //javascript영역입니다. - 대소문자 가린다. 문법있다.
+   //javaScript영역 안에서 html태그 그대로 사용가능하다.
+   //브라우저에 출력하기
+   document.write("난 어디에 출력되나요?<br>");
+   document.write("<h1 style='color:red'>나도 출력해줘봐~</h1>")
+   
+   //마우스를 over했을 때
+   function test1(){
+	   document.bgColor="red";
+   }
+   
+   
+   //마우스를 out했을 때
+   function test2() {
+	   document.bgColor="white";
+   }
+   
+</script>
+</head>
+<body>
+<h1 onmouseover= "test1()"
+	onmouseout= "test2()">
+JavaScript 시작하기! - &lt;script> &lt;/script> 영역 안에서 작성
+</h1>
+
+<script type="text/javascript">
+  //변수선언
+  var name="최수녕";
+  
+  //document.write("이름은" + name);
+  document.write(`이름은 ${name}`); //그레이브악센트문법(es6V)
+</script>
+
+</body>
+</html>

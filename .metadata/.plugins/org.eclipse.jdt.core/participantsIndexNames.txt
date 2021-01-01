@@ -1,0 +1,127 @@
+INDEX VERSION 1.131
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3579271687.index
+\ShoesCase\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4017637733.index
+\step07_ServletExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3157160532.index
+\potopolio2\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1510742784.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\509795315.index
+\potopolio2\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3695178094.index
+\step15_MVCRefactoring\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2573842266.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3443037687.index
+\ShoesCase\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2578149891.index
+\potopolio\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2815509307.index
+\step19_Ajax\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\311799583.index
+\ShoesCase_copy\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\618922117.index
+\potopolio2\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1622915550.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\620968025.index
+\potopolio\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1142174281.index
+\step09_Listener\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\401430333.index
+\step09_Listener\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3828974804.index
+\ShoesCase_copy\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1987123423.index
+\step07_ServletExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1289330152.index
+\ShoesCase\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2731184553.index
+\potopolio2\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1772477203.index
+\step07_ServletExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\489192348.index
+\step11_EL_Jstl\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4138648429.index
+\step07_ServletExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1036720326.index
+\ShoesCase_copy\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1751062642.index
+\ShoesCase_copy\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\115041570.index
+\ShoesCase_copy\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1459231030.index
+\potopolio\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3766835943.index
+\potopolio2\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2408911049.index
+\step13_DBCP\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2476271592.index
+\step07_ServletExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2975167445.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4195494737.index
+\step17_ElecBoard\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4258079472.index
+\step10_Filter\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1873534125.index
+\step16_MVCRefactoring\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3025564547.index
+\ShoesCase\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3833317063.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1225776197.index
+\potopolio\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2715147902.index
+\step17_ElecBoard\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3267954149.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3650142552.index
+\step07_ServletExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1412358128.index
+\step19_Ajax22\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3477914189.index
+\step11_EL_Jstl\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3396821503.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1777782757.index
+\step11_EL_Jstl\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3886102837.index
+\ShoesCase_copy\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3689199949.index
+\potopolio\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2441938472.index
+\step18_ElecBoard_Teacher\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2728019365.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1400778821.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\906190168.index
+\ShoesCase\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1437160238.index
+\step18_ElecBoard_Teacher\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\677126767.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\773748282.index
+\ex1122_homework\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2794052967.index
+\potopolio2\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3439128269.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\729897674.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2316720449.index
+\potopolio\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2266457866.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1589297463.index
+\step06_jspExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1919406540.index
+\step08_LoginLooutServlet\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1550326412.index
+\step12_UpDownLoad\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2086309078.index
+\step07_ServletExam\src
+C:\Edu\java web workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3166509511.index
+\step06_jspExam\src

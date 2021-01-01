@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+ $(function() {
+	 var str = "저장된 갯수 : " + sessionStorage.length + "<br>";
+		
+		for(i=0; i<sessionStorage.length; i++){
+			var key = sessionStorage.key(i);
+			var value = sessionStorage.getItem(key);
+			
+			str += key+"="+value+"<br>";
+		}
+		
+		$("#result").html(str);
+});
+</script>
+</head>
+<body>
+<div id="result"></div>
+</body>
+</html>

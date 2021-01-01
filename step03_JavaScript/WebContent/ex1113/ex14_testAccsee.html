@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+  #result{width: 200px; height: 100px; border: 1px solid red;overflow: auto;}
+
+</style>
+<script type="text/javascript">
+function transfer() {
+	//입력 상자의 값을 가져오기
+	/* window.document.f.input.속성 or //window는 생략가능 
+	   window.document.f.input.함수() */
+	   
+	   //var inputEle = document.f.input;
+		var inputEle = document.getElementById("input");
+	   //alert(inputEle.value);
+	   if(inputEle.value==""){
+		   alert("입력상자에 값을 넣으세요");
+		   inputEle.focus(); //커서 놓기
+		   return ; //함수 빠져나가라
+	   }
+	
+	//출력 상자의 가져온 값을 넣는다.
+	document.f.output.value = inputEle.value;
+	
+	
+	//h3태그 영역에 값을 누적시킨다.
+	var h3Ele = document.getElementById("result");
+	h3Ele.innerHTML += inputEle.value + "<br>";
+	
+	inputEle.value=""; //지우기
+	inputEle.focus();
+}
+</script>
+</head>
+<body>
+<form name="f" action="" method="get">
+  입력 <input type="text" name="input"  id="input">
+  출력 <input type="text" name="output" id="output">
+  <input type = "button" value="이동" onclick="transfer()">
+  </form>
+  
+  <h3 id="result"></h3>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+  <script src="../js/jquery-3.4.1.min.js"></script>
+<script>
+  $(function(){
+	  //$("#img").mouseover().mouseout()
+	  
+	  $("#img").on({
+		  mouseover: function(){
+			  $(this).attr("src","img/star.png").attr("width","150").attr("height","150");
+		  } ,
+		  mouseout : function(){
+			  $(this).attr({src:"img/heart.png" , width: "75" , height:"75"});
+		      console.log( $(this).attr("src") )
+		  
+		  }
+	  });
+  })
+	
+</script>
+</head>
+<body>
+<h1>Dom요소 속성 추가 </h1>
+<img src="img/heart.png" id="img" width="75" height="75"/>
+
+</body>
+</html>

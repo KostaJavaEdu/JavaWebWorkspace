@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>New Web Project</title>
+	<style type="text/css">
+		tr th{background-color:pink}
+		td,th{padding:3px}
+	</style>
+	<script type="text/javascript">
+	function idCkOpen() {
+		//id값 읽어오기
+		var idValue = document.member.id.value;
+		if(idValue==""){
+			alert("아이디 입력하세요.");
+			document.member.id.focus();
+			return;
+		}
+		//새창 열기 get방식 : url주소?name=value&...
+		open("ex05_idCheck.html?id="+idValue,"win","width=300, height=200");
+	}
+	
+	function zipCheck() {
+		
+		open("ex05_zipCheck.html","win","width=400, height=250")
+	}
+	
+	</script>
+	
+	
+	</head>
+	<body>
+		<h1>[ 회원 가입 ]</h1>
+		<form name="member">
+		<table>
+			<tr>
+				<th>ID</th>
+				<td>
+					<input type="text" name="id" />
+					<input type="button" value="IDCheck" onclick="idCkOpen()"/>
+				</td>
+			</tr>
+			<tr>
+				<th>우편번호</th>
+				<td>
+				  <input type="text" name="zip1" size="3" /> - 
+				  <input type="text" name="zip2" size="3" />	
+				  <input type="button" value="우편번호검색" onclick="zipCheck()"/>
+				</td>
+			</tr>
+			<tr>
+				<th>주소</th>
+				<td><input type="text" size="30" name="addr" /></td>
+			</tr>				
+		</table>
+	</form>
+	</body>
+</html>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\user\git\ShoesCase"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Edu\java web workspace\potopolio2"/>
+			<item value="C:\Edu\java web workspace\ShoesCase_copy"/>
+			<item value="C:\Edu\java web workspace\step19_Ajax22"/>
+			<item value="C:\Users\user\git\ShoesCase"/>
+			<item value="C:\Edu\java web workspace\ShoesCase-master"/>
+			<item value="C:\Edu\java web workspace\step19_Ajax"/>
+			<item value="C:\Edu\java web workspace\step18_ElecBoard_Teacher"/>
+			<item value="C:\Edu\java web workspace\step17_ElecBoard"/>
+			<item value="C:\Edu\java web workspace\step16_MVCRefactoring"/>
+			<item value="C:\Edu\java web workspace\step15_MVCRefactoring"/>
+			<item value="C:\Edu\java web workspace\step14_DBSqlInjection"/>
+			<item value="C:\Edu\java web workspace\step13_DBCP"/>
+			<item value="C:\Edu\java web workspace\step12_UpDownLoad"/>
+			<item value="C:\Edu\java web workspace\ex1122_homework"/>
+			<item value="C:\Edu\java web workspace\step11_EL_Jstl"/>
+			<item value="C:\Edu\java web workspace\potopolio"/>
+			<item value="C:\Edu\java web workspace\step02_CSS"/>
+			<item value="C:\Edu\java web workspace\ex1111_homework"/>
+			<item value="C:\Edu\java web workspace\step01_HTML"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="C:\Edu\java web workspace\step19_Ajax\step19_Ajax\WebContent\chapter_13\13-8.CustomerInfo.html"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="545"/>
+		<item key="DIALOG_Y_ORIGIN" value="209"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="627"/>
+		<item key="DIALOG_Y_ORIGIN" value="174"/>
+		<item key="DIALOG_WIDTH" value="666"/>
+		<item key="DIALOG_HEIGHT" value="505"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
+	</section>
+</section>

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>New Web Project</title>
+		<script type="text/javascript">
+		function idResult() {
+			//text박스의 값을 opener창에 넣기 (자기자신은 self라고 부름)
+			opener.document.member.id.value = document.f.id.value;
+			
+			//현재 창 닫기
+			self.close();
+		}
+		</script>
+	</head>
+	<body>
+	<form name="f">
+	  <table>
+	  	<tr>
+	  		<th colspan="2" bgcolor="yellow"> ID 중복 체크 </th>
+	  	</tr>
+	  	<tr>
+	  		<th>ID</th>
+	  		<td>
+	  			<input type="text" name="id" />
+	  			<input type="button" value="사용하기" onclick="idResult()" />
+	  		</td>
+	  	</tr>  	
+	  </table>
+	 </form>	
+	</body>
+</html>
+

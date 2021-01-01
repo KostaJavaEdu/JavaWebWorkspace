@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  
+  <script type="text/javascript">
+  
+  /*
+    ID체크 : 영문자만 허용
+  */
+  function IdCheck(th) { //th는 this가 전달되어 이벤트를 발생한 객체를 뜻함. ID객체가 전달됨(this)
+	//alert(th.value);
+	var data = th.value.toUpperCase();
+  	/* for(i=0; i<data.length; i++){
+  		var ch = data.charAt(i);
+  		//console.log(ch);
+  		if(ch < "A" || ch > "Z"){
+  			alert(ch+"는 잘못...");
+  			th.value="";
+  			th.focus();
+  			return;
+  		}
+  	} */
+  	
+  	/////////////ID에 영문, $,#,_,%,0~9 허용하고싶어!!////////////////////
+  	var str="$#%!0123456789QWERTYUIOPASDFGHJKLZXCVBNM";
+  	for(i=0; i<data.length; i++){
+  		var ch = data.charAt(i);
+  		if(str.indexOf(ch)==-1){
+  			alert(ch+"는 안됩니다...");
+  			th.value="";
+  			th.focus();
+  			return;
+  		}
+  	}
+  }
+  
+  //나이 숫자유무 체크
+  function ageCheck(th) { //this전달됨
+	  numberCheck(th);
+  }
+  
+  //isNaN()를 체크해주는 함수 작성
+  function numberCheck(obj) { //체크 할 대상
+	  if(isNaN(obj.value)){//is Not a Number(true이면 숫자가 아니다!!!)
+		  alert("숫자만 입력하세요");
+		  obj.value="";
+		  obj.focus();
+		  return true; //숫자 아니다.
+	  }else{
+		  return false; //숫자다.
+	  }
+  }
+  
+  //이메일 체크
+  function emailCheck(th) {
+	//th.value //document.form.email.value
+	if(th.value.indexOf("@")==-1){
+		//alert("이메일 형식이 아닙니다.");
+		document.getElementById("span").innerHTML
+				="<b style='color : red'>이메일 형식이 아닙니다.</b>"
+		th.value="";
+		th.focus();
+	}else{
+		document.getElementById("span").innerHTML
+				="<b style='color : blue'>이메일 형식이 맞습니다.</b>"
+	}
+  }
+  
+  //주민번호 체크(6자리 되면 커서 이동)
+  function juminCheck(th, fr) { //this, form 전달
+	//마지막 글자가 숫자인지를 체크하고
+	var lastCh = th.value.charAt(th.value.length-1);
+    //console.log(lastCh);
+ 	//숫자가 아니면 마지막 글자 지운다(제거한다.)
+ 	if(isNaN(lastCh)){
+ 		alert("숫자만 입력해");
+ 		th.value = th.value.substr(0, th.value.lelngth-1);
+ 		th.focus();
+ 		return;
+ 	}
+	  
+	//alert(th);
+  	//alert(fr);
+  	if(th.value.length==6){
+  		fr.jumin2.focus();
+  	}
+  }
+  
+  function genderCheck(th, fr) { //this, form
+	if(!numberCheck(th)){ //true이면 숫자아님
+		//성별체크
+		var ch = th.value.charAt(0);
+		if(ch =="1" || ch=="3"){
+			fr.gender[0].checked = true;
+		}else if(ch =="2" || ch=="4"){
+			fr.gender[1].checked = true;
+		}	
+	}
+  }
+  
+  </script>
+ 
+ </head>
+ <body>
+ <form name="form">
+   ID : <input type="text" name="id" onblur="IdCheck(this)"><p>
+   age : <input type="text" name="age" onblur="ageCheck(this)"><p>
+   email : <input type="text" name="email" onblur="emailCheck(this)"><p>
+   			<span id="span"></span>
+
+   <fieldset>
+     <legend>주민번호 </legend>
+	 <input type="text" size="6" name="jumin1"  onkeyup="juminCheck(this , form)"> - 
+	 <input type="text" size="7" name="jumin2" onblur="genderCheck(this, form)"
+	 > <p>
+     
+	 성별 : 
+	 <input type="radio" name="gender" value="남자"  >남자
+     <input type="radio" name="gender" value="여자">여자
+
+   </fieldset>
+
+
+ </form>
+  
+ </body>
+</html>

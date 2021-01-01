@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 셀과 셀 사이 여백 조정 : cellspacing
+	 셀 안에서 상하좌우 여백조정 : cellpadding -->
+<table border="1" cellpadding="20" 	cellspacing="0">
+<caption><h3> 테이블 만들기 (3행 2열) </h3></caption>
+<thead>
+	<tr>
+		<th> A </th>
+		<th> B </th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td> C </td>
+		<td> D </td>
+	</tr>
+	<tr>
+		<td> F </td>
+		<td> G </td>
+	</tr>
+</tbody>
+</table>
+<hr color = "red">
+
+<h3> 행 병합 </h3>
+<table border="1">
+	<tr>
+		<td>A</td>
+		<td rowspan="2">C</td>
+	</tr>
+	<tr>
+		<td>B</td>
+	</tr>
+</table>
+
+<h3> 열 병합 </h3>
+<table border="1" >
+	<tr>
+		<td colspan="2">A</td>
+	</tr>
+	<tr>
+		<td>B</td>
+		<td>C</td>
+	</tr>
+</table>
+
+<hr color = "red">
+
+<table border="1" cellspacing="0" cellpadding="20">
+<caption><h2>병합 테이블 만들기</h2></caption>
+<tr>
+	<td colspan="3"> A </td>
+</tr>
+
+<tr>
+	<td colspan="2"> B </td>
+	<td> C </td>
+</tr>
+
+<tr>
+	<td> D </td>
+	<td> E </td>
+	<td rowspan="2"> F </td>
+</tr>
+
+<tr>
+	<td> G </td>
+	<td> H </td>
+</tr>
+
+<tr>
+	<td colspan="3"> I </td>
+</tr>
+
+<tr>
+	<td rowspan="3"> J </td>
+	
+	<td colspan="2"> K </td>
+</tr>
+
+<tr>
+	<td> L </td>
+	<td> M </td>
+</tr>
+
+<tr>
+	<td> N </td>
+	<td> O </td>
+</tr>
+
+</table>
+</body>
+</html>

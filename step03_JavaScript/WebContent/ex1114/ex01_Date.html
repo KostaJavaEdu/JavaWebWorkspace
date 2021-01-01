@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+  //날자 세팅
+  var today = new Date();
+  //var today = new Date(2018,5,20,14,20,50);
+  //var today = new Date(2019,3,20);
+  //var today = new Date(2019,50);
+  
+  document.write("<h3>");
+  document.write("today :" + today + "<p>");
+  document.write("today.toLocaleString() : " + today.toLocaleString() + "<p>");
+  
+  document.write("today.getFullYear() :" + today.getFullYear() + "년<p>");
+  
+  //월은 0:1,....11:12월
+  document.write("today.getMonth() :" + (today.getMonth()+1) + "월<p>");
+  document.write("today.getDate() :" + today.getDate() + "일<p>");
+  
+  //요일은 0 : 일 ... 6:토
+  document.write("today.getDay() :" + today.getDay() + "요일<p>");
+  var arr = ["일","월","화","수","목","금","토",];
+  document.write("today.getDay() :" + arr[today.getDay()] + "요일<p>");
+  
+  document.write("today.getHours() :" + today.getHours() + "시<p>");
+  document.write("today.getMinutes() :" + today.getMinutes() + "분<p>");
+  document.write("today.getSeconds() :" + today.getSeconds() + "초<p>");
+  
+  //변경
+  today.setYear(2020);
+  today.setMonth(5);
+  document.write("today.toLocaleString() : " + today.toLocaleString() + "<p>");
+  
+  document.write("</h3>");
+  
+</script>
+</head>
+<body>
+
+</body>
+</html>

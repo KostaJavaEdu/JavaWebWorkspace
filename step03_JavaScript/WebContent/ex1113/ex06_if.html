@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+table{ border: 1px red double; width: 400px; border-collapse: collapse;}
+tr th,td{border: 1px black solid; text-align: center; padding: 5px; border-collapse: collapse;}
+table tr:first-child {background-color: orange;}
+table tr:last-child {background-color: green;}
+
+
+</style>
+<script type="text/javascript">
+	//javaScript안에서 html + 기능 모두 작성
+	
+	var name = prompt("이름은? ", "최수녕");
+	var kor = parseInt(prompt("국어점수? ", 80));
+	var eng = parseInt(prompt("영어점수? ", 80));
+	var math = parseInt(prompt("수학점수? ", 80));
+	
+	//총점
+	var sum = (kor)+(eng)+(math);
+	//평균
+	var avg = sum/3;
+	//등급
+	var grade;
+	if(avg>=90) 
+		grade = "A";
+	else if(avg>=80)
+		grade = "B";
+	else
+		grade = "C";
+	//출력
+	/* document.write("<table>");
+	document.write("<tr>");
+	document.write(`<th>이름</th><th>국어</th><th>영어</th>
+					<th>수학</th><th>총점</th><th>평균</th><th>등급</th>`);//그레이브악센트문법->줄바꿈 가능
+	document.write("</tr>");
+	document.write("<tr>");
+	document.write(`<td>${name}</td> <td>${kor}</td> <td>${eng}</td> <td>${math}</td> <td>${sum}</td> <td>${avg}</td> <td>${grade}</td>`);
+	document.write("</tr>");
+	document.write("</table>"); */
+</script>
+
+</head>
+<body>
+<table>
+
+
+<tr>
+	<th>이름</th> 
+	<th>국어</th> 
+	<th>영어</th> 
+	<th>수학</th> 
+	<th>총점</th> 
+	<th>평균</th> 
+	<th>등급</th>
+</tr>
+
+<tr>
+	<th><script>document.write(name)</script></th> 
+	<th><script>document.write(kor)</script></th> 
+	<th><script>document.write(eng)</script></th> 
+	<th><script>document.write(math)</script></th> 
+	<th><script>document.write(sum)</script></th> 
+	<th><script>document.write(avg)</script></th> 
+	<th><script>document.write(grade)</script></th>
+</tr>
+
+</table>
+</body>
+</html>

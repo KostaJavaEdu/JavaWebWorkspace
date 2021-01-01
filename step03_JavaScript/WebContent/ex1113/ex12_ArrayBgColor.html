@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+ 
+</style>
+<script type="text/javascript">
+	//색상 배열로 5개 준비
+	var color=["pink","yellow","orange","green","blue"];
+	function bgChange() {
+		//난수를 발생시킨다.
+		var i = Math.floor(Math.random()*color.length+1);
+		console.log(i)
+		//나온 난수에 해당하는 번지수의 색상으로 바탕색 변경한다.
+		document.bgColor=color[i];
+	}
+</script>
+</head>
+<body onload="bgChange()">
+
+</body>
+</html>

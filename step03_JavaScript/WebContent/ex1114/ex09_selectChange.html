@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+
+	<script type="text/javascript">
+	// 각 매장별 서브메뉴 준비한다.
+	var kfc = ["징거버거","타워버거","비스켓"];
+	var lotte = ["오징어버거","새우버거","불고기버거","데리버거"];
+	var king = ["통모짜","트러플머쉬룸","와퍼","치즈와퍼","치킨너겟","콰트로치즈버거"];
+	var mac = ["상하이","1955","빅맥","베이컨토마토디럭스","슈슈버거","슈비버거","아이스크림","치즈스틱"];
+	
+	function submenu(th) { //this전달됨
+		//alert("전 : " + th.value);
+		//alert("후 : " + eval(th.value));
+		var subM = eval(th.value);
+		
+		//기존 서브메뉴를 삭제(지우때는 끝에서 부터 지우던지 앞에 0번지만 지워야 함)
+		while(document.f.menu.length>1){
+			document.f.menu.options[1]=null;
+		}
+		
+		
+		for(i=0;i<subM.length;i++){
+			document.f.menu.options[document.f.menu.length] = 
+					new Option(subM[i],subM[i]);
+		}
+	}
+	
+	</script>
+
+
+ </head>
+
+ <body>
+ <h2> 대/ 소 분류</h2>
+ <form name="f">
+   <select name="majang" onchange="submenu(this)">
+       <option value="0">--매장 선택 --</option>
+	   <option value="kfc">KFC</option>
+	   <option value="lotte">롯데리아</option>
+	   <option value="king">버거킹</option>
+	   <option value="mac">맥도널드</option>
+   </select>
+   <select name="menu">
+       <option value="0">--선택 --</option>
+   </select>
+ </form>
+  
+ </body>
+</html>

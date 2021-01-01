@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function star() {
+		var star = parseInt(prompt("입력 할 별의 갯수를 입력해주세요."));
+		if (isNaN(star)) {
+			alert("숫자를 입력해주세요");
+			confirm("다시할래?") ? star() : alert("그만해~~");
+		} else {
+			for (var i = 1; i < star; i++) {
+				for (var j = i; j <= star; j++) {
+					document.write("*");
+				}
+				document.write("<br>");
+			}
+			document.write("<hr>");
+			for (var i = star; i > 0; i--) {
+				for (var j = i; j > 0; j--) {
+					document.write("*");
+				}
+				document.write("<br>");
+			}	
+		}		
+	}
+	
+
+	
+	
+</script>
+</head>
+<body>
+<input type="button" value="별찍기" onclick="star()"/>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <script type="text/javascript">
+  
+  function jobSel(th) { //this전달됨
+	var str="";
+	//선택된 index
+	str += "선택된 번지수 : " + th.selectedIndex + "<br>";
+	//선택된 value
+	str += "선택된 value : " + th.value + "<br>";
+	str += "항목의 갯수 :" + th.length + "<br>";
+	
+	//모든 항목의 value를 가져오기
+	for(i=0; i<th.length; i++){
+		str += th[i].value + ",";
+	}
+	
+	document.getElementById("result").innerHTML = str;
+	
+	//항목추가
+	th.options[th.length] = new Option("자고싶다","쉬자"); //<option value="날라리">날라리 </option>
+	//항목삭제
+	th.options[0] = null;
+  }
+  
+  </script>
+  
+ </head>
+
+ <body >
+
+ <h3>
+   Event 종류 알아보기
+ </h3>
+ <form name="f">
+    <input type="text" 
+    	   onfocus="this.style.border = 'double 5px red'; this.style.color='blue'";
+    	   onblur="this.style.border = 'solid 1px gray'"; 
+    	   onmouseover="this.style.backgroundColor='orange'";
+    	   onmouseout="this.style.backgroundColor='white'"/> <p>
+
+	직업 : 
+	 <select name="job" onchange="jobSel(this)">
+       <option value="0">--선택-- </option>
+	   <option value="백수">백수</option>
+	   <option value="백조">백조 </option>
+	   <option value="학생">학생 </option>
+	   <option value="날라리">날라리 </option>
+	 </select>
+ <form>
+ <h3 id='result'></h3>
+  
+ </body>
+</html>

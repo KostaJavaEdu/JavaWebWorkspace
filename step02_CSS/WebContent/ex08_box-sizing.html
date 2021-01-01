@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+/*
+	실제
+	width : width + padding + border-width 
+	height : height + padding + border-width 
+*/
+  .a{
+  	width: 300px; height: 200px; background-color: pink;
+  	border: red 10px solid;
+  	padding: 20px;
+  	}
+  .b{
+  	width: 300px; height: 300px; background-color: skyblue;
+  	border: red 10px solid;
+  	padding: 20px;
+  	box-sizing: border-box; /*css3에 추가*/
+  	border-radius: 150px
+  	}
+</style>
+</head>
+<body>
+<div class="a">box-sizing연습</div>
+<div class="b">box-sizing연습</div>
+</body>
+</html>

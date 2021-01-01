@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+	<script type="text/javascript">
+		document.write("<h1>변수에 개념</h1>");
+		/* var a;
+		var b=10;
+		var c="수녕";
+		d=3.14 //var키워드는 생략가능 */
+		
+		let a;
+		let b=10;
+		let c="수녕";
+		d=3.14;
+		
+		const aa = "100"//상수(값변경 불가)
+		
+		document.write("<h3>")
+		document.write("a = " + a + "," + (typeof a) + "<br>");
+		document.write("b = " + b + "," + (typeof b) + "<br>");
+		document.write("c = " + c + "," + (typeof c) + "<br>");
+		document.write("d = " + d + "," + (typeof d) + "<br>");
+		
+		//값 변경
+		a = new String("안녕하세요");
+		b = "배고프다";
+		c = 20;
+		d = new Array(2);
+		
+		document.write("a = " + a + "," + (typeof a) + "<br>");
+		document.write("b = " + b + "," + (typeof b) + "<br>");
+		document.write("c = " + c + "," + (typeof c) + "<br>");
+		document.write("d = " + d + "," + (typeof d) + "<br>");
+		
+		document.write("</h3>");
+		
+		//함수 작성
+		function test() {
+			//document.write("age = " + age + "<br>");
+			//var age = 10;//호이스팅 개념
+			//위와같은 모호함 때문데....
+			let age = 10; //변수의 scope이 블럭당 생성(선언되기 전에 절대 사용할 수 없는 상황)
+			document.write("age = " + age);
+			
+		}
+		
+		//함수호출
+		test();
+		
+		document.write("<hr color='red'>");
+		//////////////////////////////operator//////////////////////////////////////////
+		let i = 10, j="10";
+		document.write("i = " + i + "," + (typeof i) + "<br>");
+		document.write("j = " + j + "," + (typeof j) + "<br>");
+		
+		document.write("i==j : " + (i==j) + "<br>" ); //value equal
+		document.write("i===j : " + (i===j) + "<br>" ); //value + type equal
+		
+		document.write("i+j : " + (i+window.parseInt(j)) + "<br>"); //window. 안써도 됨
+		document.write("i-j : " + (i-j) + "<br>"); 
+		document.write("i*j : " + (i*j) + "<br>"); 
+		
+		// 야 아몬드 빼빼로 있으면 내놔라 이것아
+		// 요즘 것들은 말야 먹을 것을 안 내놔
+		// 그냥 말고 아몬드로 달라~ 이말이야
+		
+	</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

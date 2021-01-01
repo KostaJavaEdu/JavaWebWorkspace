@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	  function printStar(){
+		var num = parseInt(prompt("별의 개수를 입력?"));
+		
+		for(i=num; i>0;i--) {//5 4 3 2 1
+			for(j=i;j>0;j--) {
+				document.write("★");
+			}
+			document.write("<br>");
+		}
+	
+       document.write("<hr>");
+	    for(i=1; i <=num ; i++){//행
+          for(j=i ; j <= num; j++){
+             document.write("★");
+		  }
+		  document.write("<br>");
+	   } 
+
+
+
+	  }//함수끝
+
+	  
+  </script>
+ </head>
+ <body onload="printStar()">
+  
+ </body>
+</html>
+
+
+
+

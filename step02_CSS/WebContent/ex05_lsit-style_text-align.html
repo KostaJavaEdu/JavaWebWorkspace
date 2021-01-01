@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/*ol{list-style-image: URL("img/live.jpg")}
+	ol ul{list-style-image: URL("img/checkBox1.png")}
+	
+	ul{list-style-type: upper-roman;}
+	ul li:last-child {list-style-position: inside;}*/
+	
+	ol{list-style: url("img/live.jpg") inside upper-roman;}
+	
+	table {width: 400px; height: 400px; border: 2px solid  red;
+			border-collapse: collapse;}
+	
+	td{border: 1px gray solid;}
+	table tr td:first-child{width: 100px}
+	
+</style>
+</head>
+<body>
+<h1> ol태그 - 순서 있는 목차 </h1>
+
+<ol>
+	<li>기아 자동차</li>
+		<ul>
+			<li>K3</li>
+			<li>K5</li>
+			<li>K7</li>
+			<li>K9</li>
+		</ul>
+	<li>현대 자동차</li>
+	<li>삼성 자동차</li>
+</ol>
+
+<h1> ul태그 - 순서 없는 목차 </h1>
+
+<ul>
+	<li>기아 자동차</li>
+		<ul>
+			<li>K3</li>
+			<li>K5</li>
+			<li>K7</li>
+			<li>K9</li>
+		</ul>
+	<li>현대 자동차</li>
+	<li>삼성 자동차</li>
+</ul>
+
+<hr>
+
+<table>
+	<tr>
+		<td>왼쪽정렬</td>
+		<td style="text-align: left; vertical-align: top">가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.</td>
+	</tr>
+	
+	<tr>
+		<td>가운데정렬</td>
+		<td style="text-align: center; vertical-align: bottom;">가장 졸린 시간입니다.</td>
+	</tr>
+	
+	<tr>
+		<td>오른쪽정렬</td>
+		<td style="text-align: right; vertical-align: middle;">가장 졸린 시간입니다.</td>
+	</tr>
+	
+	<tr>
+		<td style="text-align: justify;">혼합정렬</td>
+		<td>가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.가장 졸린 시간이지만 자고싶지 않다.</td>
+	</tr>
+</table>
+
+</body>
+</html>

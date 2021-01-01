@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  
+  <title>Document</title>
+  <style>
+     input[type=text]{
+	     width:600px;height:50px;font-size:20px;
+	     border:double red 3px;
+	 }
+	 input[type=button]{width:50px;height:50px;font-size:20px}
+	 
+  </style>
+  <script>
+     var arr=["오","늘","은"," 즐거운","!!","집","에","가","고","싶","다!"];
+	 var index=0;
+	 
+     function textMove(){//a는 form객체
+         document.f.text.value += arr[index++] ;
+          console.log(index)
+		 if(index== arr.length){
+			 index=0;
+			 return;//함수를 빠져나가라.
+		 }
+          
+		setTimeout("textMove()", 200);//0.1초
+	 }
+  </script>
+ </head>
+ <body>
+ <h1>Text Element 접근</h1>
+ <form name="f">
+  <input type="text" name="text">
+  <input type="button" value="클릭"  onclick="document.f.text.value='';textMove()">
+ </form>
+  
+ </body>
+</html>

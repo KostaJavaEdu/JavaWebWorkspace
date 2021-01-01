@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+div {
+	width: 200px;
+	height: 100px;
+	border: 1px red solid
+}
+</style>
+<script type="text/javascript">
+	/* alert(isNaN(10));
+	alert(isNaN("10"));
+	alert(isNaN("A")); //true가 나오면 숫자가 아니란 소리 */
+
+	function operTest() {
+		var first = parseInt(prompt("첫번째 숫자? ", 30));
+		var second = parseInt(prompt("두번째 숫자? ", 80));
+		var cal = prompt("연산기호?(+,-,*,/) ", "+");
+
+		if (isNaN(first) || isNaN(second)) {//Not a Number
+			alert("숫자가 아닙니다.");
+			confirm("다시할래") ? operTest() : alert("그만해~~");
+		} else {
+
+			var divEle = document.getElementById("div");
+			/* switch (cal) {
+
+			case "+":
+				divEle.innerText = first + "+" + second + "="
+						+ (first + second);
+				break;
+			case "-":
+				divEle.innerText = first + "-" + second + "="
+						+ (first - second);
+				break;
+			case "*":
+				divEle.innerText = first + "*" + second + "="
+						+ (first * second);
+				break;
+			case "/":
+				divEle.innerText = first + "/" + second + "="
+						+ (first / second);
+				break;
+			default:
+				alert(cal + "잘못입력하셨습니다.");
+				confirm("다시할래") ? operTest() : alert("그만해~~");
+
+			} */
+			var reuslt;
+			switch (cal) {
+
+			case "+":
+				result = (first + second);
+				break;
+			case "-":
+				result = (first - second);
+				break;
+			case "*":
+				result = (first * second);
+				break;
+			case "/":
+				result = (first / second);
+				break;
+			default:
+				alert(cal + "잘못입력하셨습니다.");
+				confirm("다시할래") ? operTest() : alert("그만해~~");
+
+			}
+			divEle.innerText =first + cal + second + "=" + result;
+			
+			//alert(11);
+			//console.log("11");
+			//document.write("11");
+
+			//div영역에 데이터를 출력 -- div요소를 찾기
+			//id로 찾기 -> document.getElementByhId("id")
+			//var divEle = document.getElementById("div");
+			//console.log("divEle : " + divEle);
+			//alert("divEle : " + divEle); //divEle.속성 or divEle.함수() 가능
+			//divEle.innerHTML = `${first} ${cal} ${second} = ${result} `;
+			//divEle.innerText="<h4>졸지맙시다.</h4>";	
+		}
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="연산하기" onclick="operTest()" />
+
+	<div id="div"></div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		//alert(1)
+		$("[value=확인]").click(function() {
+			var str = "성별 : ";
+			str += $(":radio:checked").val() + "<br>";
+			//alert($(":checkbox:checked").val());
+
+
+			/*
+				jQuery 반복문
+				  -each함수
+
+				  1)$(selector).each(function(index,item){})
+				  반복을 해야하는 대상이 selector를 가지고 반복 해야하
+
+				  2)$.each(대상, function(index,item){})
+				  selector가 없어 var arr = [10,20,30,40]
+			*/
+			//취미
+			$(":checkbox:checked").each(function(index,item){
+				//alert(index + "," + item.value);
+				//alert($(this).val())
+				//alert(this.value)
+				str += item.value+",";
+			})
+
+			$("div").html(str);
+		})
+	});
+	
+	
+</script>
+</head>
+
+<body>
+	<h1>click 이벤트</h1>
+<form>
+	취미 : 
+	   <input type="checkbox"  name="hobby" value="등산">등산
+	   <input type="checkbox"  name="hobby" value="낚시">낚시
+	   <input type="checkbox"  name="hobby" value="수영">수영
+	<p/>
+	성별 : 
+	 <input type="radio" name="gender" value="남자"/> 남자
+	 <input type="radio" name="gender" value="여자"/> 여자
+	
+	 <input type="button" value="확인"  />
+ </form>	
+<h2>선택 결과</h2>
+<div></div>
+
+</body>
+</html>
+
+
+
+
+

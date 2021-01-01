@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style>
+	img{width:50px;height:40px}
+</style>
+ <script src="../js/jquery-3.4.1.min.js"></script>
+ <script type="text/javascript">
+   $(document).ready(function(){
+	  var color=["red","green","blue","skyblue"];
+	  //$.each(color, function(){})
+	  
+	  $("h3").each(function(index, item){
+		  $(this).css("background-color", color[index]);
+	  });
+	  
+	  var img="<img src='img/jquery.jpg'>";
+	  $("#pre").click(function(){
+		  $(".a").prepend(img);//앞에추가(자식노드)
+	  });
+	  
+	  $("#app").click(function(){
+		  $(".b").append(img);//뒤에 추가(자식노드)
+	  });
+	  
+	  $("#before").click(function(){
+		  $(".c").before(img);//앞에추가(형제노드)
+	  });
+	  
+	  $("#after").click(function(){
+		  $(".d").after(img);//뒤에추가(형제노드)
+	  });
+	 
+	  
+   });
+ 
+ </script>
+
+</head>
+<body>
+	<input type="button" id="pre" value="prepend"/>
+	<input type="button" id="app" value="append"/>
+	
+    <input type="button" id="before" value="before"/>
+	<input type="button" id="after" value="after"/>
+	
+	<h3 class="a">prepend 영역</h3>
+	<h3 class="b">append 영역</h3>
+	<h3 class="c">before 영역</h3>
+	<h3 class="d">after 영역</h3>
+</body>
+</html>
+
+
+

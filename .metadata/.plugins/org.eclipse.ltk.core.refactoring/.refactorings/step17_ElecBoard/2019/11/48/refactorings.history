@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;step17_ElecBoard&apos;&#x0D;&#x0A;- Original project: &apos;step17_ElecBoard&apos;&#x0D;&#x0A;- Original element: &apos;kosta.down.DownLoadServlet.java&apos;" description="Delete element" element1="/src&lt;kosta.down{DownLoadServlet.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1574950625470" subPackages="false" version="1.0"/>
+</session>
